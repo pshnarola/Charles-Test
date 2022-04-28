@@ -1,0 +1,91 @@
+<h1>Edit User</h1>
+<form (ngSubmit)="onSubmit()" [formGroup]="userForm">
+
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="username">Username</label>
+                <input type="text" class="form-control" formControlName="username">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="phone">Phone</label>
+                <input type="text" class="form-control" formControlName="phone">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="email">email</label>
+                <input type="text" class="form-control" formControlName="email">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="website">Website</label>
+                <input type="text" class="form-control" formControlName="website">
+            </div>
+        </div>
+    </div>
+    <div class="row" formGroupName="company">
+        <div class="col-4">
+            <div class="form-group mb-3">
+                <label class="form-label" for="name">Company Name</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mb-3">
+                <label class="form-label" for="catchPhrase">Catch Phrase</label>
+                <input type="text" class="form-control" formControlName="catchPhrase">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group mb-3">
+                <label class="form-label" for="bs">BS</label>
+                <input type="text" class="form-control" formControlName="bs">
+            </div>
+        </div>
+    </div>
+    <div class="row" formGroupName="address">
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="suite">Suite</label>
+                <input type="text" class="form-control" formControlName="suite">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="street">Street</label>
+                <input type="text" class="form-control" formControlName="street">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="city">City</label>
+                <input type="text" class="form-control" formControlName="city">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label class="form-label" for="zipcode">Zipcode</label>
+                <input type="text" class="form-control" formControlName="zipcode">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary" type="submit">Edit User</button>
+        </div>
+    </div>
+</form>
